@@ -1,0 +1,154 @@
+body {
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    font-size: 30px;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: 10px; /*ボタン間の空白*/
+
+    background-color: #fff;
+    border-radius: 5px;
+
+    display: inline-flex;           /* 中身を自由に動かせるようにする */
+    align-items: center;     /* 上下（垂直）の真ん中 */
+    justify-content: center; /* 左右（水平）の真ん中 */
+    vertical-align: top;     /* 縦のズレを防止 */
+}
+
+/*上の帯*/
+#display-count {
+    font-size: 28px;
+    position: relative; /*基準点に設定*/
+    width: 150px;
+    height: 43px;
+    line-height: 1.4; /*文字の高さ*/
+    padding:0.25em 1em; /*上下の空白*/
+    display: inline-block; /*文字サイズに合わせた箱に*/
+    top:30%;
+
+    color: #ffffff;
+    background-color: #96c9ff;
+}
+#display-count:before, #display-count:after { 
+    position: absolute;
+    top: 0;
+    content:'';
+
+    width: 53px;
+    height: 57px;   
+}
+#display-count:before {
+    /*左*/
+    left: -53px;
+    /*グラデーション*/
+    background: linear-gradient(
+        to left,
+        #96c9ff,
+        transparent
+    );
+}
+#display-count:after {
+    /*右*/
+    right: -53px;
+    /*グラデーション*/
+    background: linear-gradient(
+        to right,
+        #96c9ff,
+        transparent
+    );
+}
+
+/*赤用のアニメーション*/
+.mark-appear-red {
+    font-size: 33px;
+    font-weight: bold; /* 太字 */
+    animation: nourish 0.5s ease-out forwards; /*アニメーションの指定*/ 
+}
+@keyframes nourish {
+    /*文字の色を変える*/
+    0% {color: #fff; transform:scale(0.5);} /*最初は小さくしておく*/
+    50% {transform:scale(1.5);} /*一度大きく*/
+    100% {color: #f03939; transform:scale(1);} /*最後は元の大きさに*/
+}
+/*青用のアニメーション*/
+.mark-appear-blue {
+    font-size: 40px;
+    animation: fadeInTextBlue 0.5s ease-out forwards;
+}
+@keyframes fadeInTextBlue {
+    /*文字の色を変える*/
+    0% {color: #fff; transform:scale(0.5);} /*最初は小さくしておく*/
+    50% {transform:scale(2.0);} /*一度大きく*/
+    100% {color: #2049ee; transform:scale(1.5);} /*最後は元の大きさに*/
+}
+
+/* アニメーションとは別に、色を固定するクラスを作る */
+.text-red { color: #f03939 !important; }
+.text-blue { color: #2049ee !important; }
+
+/*リセットアニメーション*/
+.mark-reset {
+    font-size: 30px;
+    animation: reset 0.5s ease-out forwards;
+}
+@keyframes reset {
+    0% {
+        opacity: 1;
+        transform: scale(1) translateY(0); /* 今の位置 */
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.2) translateY(-30px); /* 30px上に移動しながら消える */
+    }
+}
+
+/* 勝利したマス用のクラス */
+.winner-block {
+    --glow-color: #ffd700; 
+    
+    border: 2px solid var(--glow-color) !important; /* 光る色の枠を追加 */
+    animation: glow 0.8s ease-in infinite alternate; /* 光るアニメーションを繰り返す(alternateで繰り返す0->100,100->0) */
+    z-index: 10; /* 他のマスより少し上に表示 */
+}
+@keyframes glow {
+    0% {
+        /* 0(水平方向のズレ) 0(垂直方向) 5px(ぼかしの強さ) 色 */
+        box-shadow: 0 0 5px var(--glow-color);
+    }
+    100% {
+        box-shadow: 0 0 20px var(--glow-color), 0 0 10px #fff; /* 光の強さを変える */
+        transform: scale(1.05); /* 少しだけ膨らませるとさらに光ってる感が出る */
+    }
+}
+
+#display-result {
+    font-size: 35px;
+    color: #363636;
+}
+
+#undo {
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+
+    border: none;
+    background-color: #9b9b9b;
+    color: #fff;
+}
+
+#reset {
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+
+    border: none;
+    background-color: #4c9ff8;
+    color: #fff;
+}
