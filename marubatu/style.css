@@ -34,7 +34,7 @@ input {
     top:30%;
 
     color: #ffffff;
-    background-color: rgb(50, 122, 121);
+    background-color: #96c9ff;
 }
 #display-count:before, #display-count:after { 
     position: absolute;
@@ -50,7 +50,7 @@ input {
     /*グラデーション*/
     background: linear-gradient(
         to left,
-        rgb(50, 122, 121),
+        #96c9ff,
         transparent
     );
 }
@@ -60,7 +60,7 @@ input {
     /*グラデーション*/
     background: linear-gradient(
         to right,
-        rgb(50, 122, 121),
+        #96c9ff,
         transparent
     );
 }
