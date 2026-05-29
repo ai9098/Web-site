@@ -1,0 +1,60 @@
+<html lang='ja'>
+    <head>
+        <title>カラータイルへようこそ！</title>
+        <link rel="stylesheet" href="./css/style.css"></link>
+        <meta charset="UTF-8"></meta>
+        
+        <!-- アイコン素材を読み込む -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="header">カラータイルへようこそ！</h1>
+        </header>
+
+        <main>
+            <section class="explanation">
+                <p>カラータイルの終了条件は、すべてのタイルを消すことです。</p>
+                <p>
+                    タイルのないマスをクリックすると、上下左右の同色タイルを消すことができます。
+                    上下左右に同色タイルがない場合は、タイルを消すことができません。
+                    タイルを消す出来る組み合わせがなくなると、その時点でゲームオーバーになります。
+                </p>
+                <p>タイルの大きさは難易度によって異なります。(Easy: 5x5, Normal: 6x6, Hard: 7x7)</p>
+            </section>
+
+            <section class="difficulty">
+                <p id = 'subtitle'>難易度を選択</p>
+                <div class="row">
+                    <input type = 'button' id = 'easy' value='Easy' onclick = "startGame('easy')">
+                    <input type = 'button' id = 'normal' value='Normal' onclick = "startGame('normal')">
+                    <input type = 'button' id = 'hard' value='Hard' onclick = "startGame('hard')">
+                </div>
+            </section>
+
+            <!-- 2. ゲーム画面 (最初は隠しておく) -->
+            <section class = "game-container" style = 'display: none;'>
+                <div class = "tile-container">
+                    
+                </div>
+
+                <!-- リザルト -->
+                <p id = "result" style = "display: none;">ここにリザルト</p>
+                
+                <!-- リスタート・タイトルに戻るボタン-->
+                <div class = "reset-home">
+                    <button id ="home-button">
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                    
+                    <input type="button" id="reset" value="リセット">
+                </div>
+
+            </section>
+        </main>
+
+        <script type = 'text/javascript' src = './js/function.js'></script>
+    </body>
+
+</html>
