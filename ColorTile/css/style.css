@@ -1,0 +1,153 @@
+body {
+    margin: 0; /*ブラウザのデフォルトの余白をリセット*/
+    text-align: center;
+    font-size: 30px;
+    background-color: #f1f1f1;
+}
+
+
+header {
+    background-color: #77b9ff;
+    height: 70px;
+
+    display: flex;
+    justify-content: center; /* 横中央 */
+    align-items: center;     /* 縦中央 */
+}
+header h1 {
+    color:#ffffff;
+    font-size: 40px;
+    margin: 0px; /*上下の空白*/
+}
+
+
+main {
+    width: 100%;
+}
+
+
+/* 説明文 */
+.explanation {
+    font-size: 18px;
+    width: 80%;
+    margin: 25px auto 0 auto; /* 上下の空白と左右の自動マージンで中央寄せ */
+
+    opacity: 1;
+    transition: all 0.4s ease; /* アニメーション */
+}
+.explanation p {
+    text-align: left;
+    margin: 0 0 10px 0; /*段落間のスペース*/
+}
+/* アニメーション */
+.explanation.hide {
+    opacity: 0;
+    transform: translateY(-20px); /* 上に移動してフェードアウト */
+}
+
+
+/* 難易度選択 */
+.difficulty {
+    width: 100%;
+    font-size: 30px;
+    margin: 60px 0 50px 0; /*上の空白*/
+
+    opacity: 1;
+    transition: all 0.4s ease; /* アニメーション */
+}
+.difficulty p {
+    display: inline-block; /* テキストの幅に合わせる */
+    margin: 0 0 30px 0; /* テキスト間のスペース */
+
+    width: 20%;
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+}
+.difficulty .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /*ボタン間のスペース*/
+    margin-top: 10px; /*テキストとボタンのスペース*/
+}
+.difficulty .row input {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #77b9ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+/* アニメーション */
+.difficulty.hide {
+    opacity: 0;
+    transform: translateY(-20px); /* 上に移動してフェードアウト */
+}
+/* スマホ版に対応 */
+@media only screen and (max-width: 960px) {
+    .difficulty p {
+        width: 40%;
+    }
+}
+
+
+/* ゲーム画面 */
+.game-container {
+    opacity: 1;
+    transition: all 0.4s ease; /* アニメーション */
+}
+.game-container .tile-container {
+    display: grid;
+    gap: 7px; /* タイル間のスペース */
+    width: min(100vw, 100vh);
+    margin: 35px auto 0 auto; /* 中央寄せ */
+    justify-content: center;
+}
+.game-container .tile-container .tile {
+    /* タイルに関する情報 */
+    width: 55px;
+    height: 55px;
+    background-color: rgb(228, 228, 228);
+    border: 2px solid black;
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+}
+
+.game-container #result {
+    color: #364e96;
+    margin: 30px auto 40px auto;
+}
+.game-container .reset-home {
+    width: 290px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 1/3で区切る */
+    align-items: center;
+    margin: 35px auto 20px auto;
+}
+.game-container #home-button {
+    font-size: 35px;
+    color: #364e96;
+    background: transparent;
+    border: none;
+    justify-self: start;
+}
+.game-container #reset {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: #364e96;
+    border: 2px solid #364e96;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+/* アニメーション */
+.game-container.hide {
+    opacity: 0;
+    transform: translateY(+20px); /* 下に移動してフェードアウト */
+}
