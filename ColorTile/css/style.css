@@ -112,7 +112,7 @@ main {
     width: 55px;
     height: 55px;
     background-color: rgb(228, 228, 228);
-    border: 2px solid black;
+    border: 2px solid #0d1324;
     aspect-ratio: 1 / 1;
     border-radius: 5px;
 }
