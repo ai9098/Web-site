@@ -18,7 +18,7 @@ https://ai9098.github.io/Web-site/ColorTile/
 - JavaScript
 
 ## Folder Structure
-❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
+```text
 ColorTile/ 
 ├── index.html 
 ├── css 
@@ -26,3 +26,4 @@ ColorTile/
 ├── js 
     └── function.js 
 └── java-original/
+```
