@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 要素を統一したスタイルにするためのCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+        
+        <!-- カスタムスタイルシート -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/scroll.css">
+        <!-- 外部JSファイルを読み込み -->
+        <script src="js/function.js" defer></script>
+
+        <!-- フォントを読み込む -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+        <!-- アイコン素材を読み込む -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        
+        <title>ポートフォリオ</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="row">
+                <!-- ロゴを作る -->
+                <a href="./index.html" class="logo">ポートフォリオ</a>
+                <!-- ナビゲーションメニュー -->
+                 <nav>
+                    <!-- 箇条書き -->
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./project.html">Projects</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- 見出し -->
+            <section class="main_visual">
+                <div class="container"> 
+                    <div class="title scroll">
+                        <h1 Id="Type">No Type</h1>
+                        <h1 id="Life">No Life...</h1>
+                    </div>
+                </div>
+                <div class="white"></div>
+            </section>
+
+            <!-- 作成品一覧 -->
+            <section class="section1">
+                <div class="container">
+                    <p class="sub_title scroll">制作品</p>
+                    <h2 class="scroll">Programs</h2>
+                    <div class="row">
+                        <div class="col scroll">
+                            <img src="./Images/marubatu.png" width="100%" alt="game1">
+                            <h3>まるばつゲーム</h3>
+                        </div>
+                        <div class="col scroll">
+                            <img src="./Images/portforio.png" width="100%" alt="game1">
+                            <h3>カラータイル</h3>
+                        </div>
+                        <div class="col scroll">
+                            <img src="./Images/colorTile.png" width="100%" alt="game1">
+                            <h3>ポートフォリオ</h3>
+                        </div>
+                    </div>
+                    <div class="center scroll">
+                        <a href="./project.html#Programings" class="btn">View  Projects</a>
+                    </div>
+                </div>
+
+                <div class="container scroll">
+                    <h2>Illustrations</h2>
+                    <div class="row">
+                        <div class="col scroll">
+                            <img src="./Images/ill1-up.png" width="100%" alt="game1">
+                            <h3>神楽ちゃん</h3>
+                        </div>
+                        <div class="col scroll">
+                            <img src="./Images/ill2-up.png" width="100%" alt="game1">
+                            <h3>甘奈ちゃん</h3>
+                        </div>
+                        <div class="col scroll">
+                            <img src="./Images/ill3-up.png" width="100%" alt="game1">
+                            <h3>二次創作</h3>
+                        </div>
+                    </div>
+                    <div class="center scroll">
+                        <a href="./project.html#Illustrations" class="btn">View  Projects</a>
+                    </div>
+                </div>
+
+                <div class="container scroll">
+                    <h2>3Dmodels</h2>
+                    <div class="row">
+                        <div class="col scroll">
+                            <img src="./Images/nina-up.png" width="100%" alt="game1">
+                            <h3>にーな</h3>
+                        </div>
+                        <div class="col scroll">
+                            <img src="./Images/hand-up.png" width="100%" alt="game1">
+                            <h3>手</h3>
+                        </div>
+                        <div class="col scroll" style = 'display: none;'>
+                            <img src="./Images/mv.jpg" width="100%" alt="game1">
+                            <h3>ーー</h3>
+                        </div>
+                    </div>
+                    <div class="center scroll">
+                        <a href="./project.html#models3d" class="btn">View  Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- プロフィール -->
+            <section class="section2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-img scroll">
+                            <img src="./Images/face.JPG" width="100%" alt="game1">
+                        </div>
+                        <div class="col-text scroll">
+                            <p class="sub_title">プロフィール</p>
+                            <h2>Profile</h2>
+                            <p class="text">
+                                高知工科大学 サイバーセキュリティ学科 学士3年の芳野愛和です。
+                                研究室には早期配属し、現在は画像処理に関する技術について学んでおります。
+                                <br><br>
+                                ゲームやプログラミング、イラストを描くことが好きで、イラストは中学生の頃から続けています。
+                                実際にお仕事としてご依頼いただき、制作した経験もあります。
+                                <br><br>
+                                好きな音楽のジャンルは、J.POP、K.POP、クラシック、ジャズです。
+                                気分に合わせてさまざまな曲を聴いてます。
+                            </p>
+                            <a href="https://github.com/ai9098/Web-site" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="./contact.html">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="go_top">
+                <a href="./index.html" class="go_top_btn">
+                    <i class="fas fa-angle-up"></i> Top Page
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <a href="" class="logo">ポートフォリオ</a>
+                <ul>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                Copyright © 2026 ポートフォリオ All right reserverd.
+            </div>
+        </footer>
+    </body>
+
+</html>
