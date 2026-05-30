@@ -3,7 +3,7 @@ HTML・CSS・JavaScriptを用いて作成したパズルゲームです。
 授業課題として作成したJavaプログラムをもとに、Webアプリとして再実装しました。
 UIは授業内で配布された雛型を参考にしていますが(Main.java)、タイル探索アルゴリズムやゲームロジックは自分で実装しています。
 
-## portforio-site
+## portfolio-site
 HTML・CSS・JavaScriptを用いて作成した、私のポートフォリオサイトです。
 
 ## marubatu
