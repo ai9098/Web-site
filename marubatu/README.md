@@ -23,5 +23,5 @@ https://ai9098.github.io/Web-site/marubatu/
 marubatu/ 
 ├── index.html 
 ├── style.css 
-└──  javascript.js  
+└── javascript.js  
 ```
