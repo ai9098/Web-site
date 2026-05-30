@@ -1,6 +1,6 @@
 # marubatu
 HTML・CSS・JavaScriptを用いて作成した○×ゲームです。
-アルゴリズムはyoutubeの動画を参考にし、シンプルなUIや演出に力を入れました。
+アルゴリズムはyoutubeの動画を参考にし、UIや演出に力を入れました。
 reference: https://www.youtube.com/watch?v=yl2yAGXQWt0&list=PLjVOh_I4G7VfS_Oz3R47vpXslBDHy2KOD
 
 ## Demo
