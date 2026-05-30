@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 要素を統一したスタイルにするためのCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+        
+        <!-- カスタムスタイルシート -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/scroll.css">
+        <!-- 外部JSファイルを読み込み -->
+        <script src="js/function.js" defer></script>
+
+        <!-- フォントを読み込む -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+        <!-- アイコン素材を読み込む -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        
+        <title>ポートフォリオ - Contact</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="row">
+                <!-- ロゴを作る -->
+                <a href="./index.html" class="logo">ポートフォリオ</a>
+                <!-- ナビゲーションメニュー -->
+                 <nav>
+                    <!-- 箇条書き -->
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./project.html">Projects</a></li>
+                        <li><a href="./contact.html" id="header_contact">Contact</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- 見出し -->
+            <section class="page_main_visual">
+                <div class="container"> 
+                    <div class="title">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+                <div class="white"></div>
+            </section>
+
+            <!-- 内容 -->
+            <section class="contact_section1">
+                <div class="container">
+                    <h2>Thanks for Reading!</h2>
+                    <div class="comment">
+                        <p>最後までご覧いただきありがとうございました。</p>
+                        <p>もしご連絡がございましたら、下記フォームよりお気軽にお問い合わせください。</p>
+                    </div>
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="4dbff45f-4619-4c85-90ed-478989185c33">
+                        <div class="row">
+                            <div class="left">
+                                <div class="input-box">
+                                    <input type="text"  name="name" placeholder="Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="input-box message">
+                                    <textarea name="message" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="button">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="go_top">
+                <a href="./contact.html" class="go_top_btn">
+                    <i class="fas fa-angle-up"></i> Top Page
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <a href="./index.html" class="logo">ポートフォリオ</a>
+                <ul>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                Copyright © 2026 ポートフォリオ All right reserverd.
+            </div>
+        </footer>
+    </body>
+
+</html>

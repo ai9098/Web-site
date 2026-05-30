@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 要素を統一したスタイルにするためのCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+        
+        <!-- カスタムスタイルシート -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/scroll.css">
+        <!-- 外部JSファイルを読み込み -->
+        <script src="js/function.js" defer></script>
+
+        <!-- フォントを読み込む -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+        <!-- アイコン素材を読み込む -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        
+        <title>ポートフォリオ - Projects</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="row">
+                <!-- ロゴを作る -->
+                <a href="./index.html" class="logo">ポートフォリオ</a>
+                <!-- ナビゲーションメニュー -->
+                 <nav>
+                    <!-- 箇条書き -->
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./project.html" id="header_projects">Projects</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- 見出し -->
+            <section class="page_main_visual">
+                <div class="container"> 
+                    <div class="title">
+                        <h1>Projects</h1>
+                    </div>
+                </div>
+                <div class="white"></div>
+            </section>
+
+            <!-- 目次 -->
+            <section class="projects_table_of_contents slide">
+                <nav class="toc">
+                    <a href="#Programings">
+                        <span class="square programing"></span>
+                        <span class="number">01</span>
+                        <span class="text">Programings</span>
+                    </a>
+                    <a href="#Illustrations">
+                        <span class="square illustration"></span>
+                        <span class="number">02</span>
+                        <span class="text">Illustrations</span>
+                    </a>
+                    <a href="#models3d">
+                        <span class="square model3d"></span>
+                        <span class="number">03</span>
+                        <span class="text">3Dmodels</span>
+                    </a>
+                </nav>
+            </section>
+
+            <!-- 内容 -->
+            <section class="projects_section1">
+                <div class="container">
+                    <p class="sub_title scroll2">制作品</p>
+                    <h2 id="Programings" class="scroll2">Programs</h2>
+                    <div class="row">
+                        <!-- カード -->
+                        <a href="#modal-colortile" class="col scroll2 modalOpen" data-modal="pro-modal2">
+                            <div class="card">
+                                <img src="./Images/colorTile.png" width="100%" alt="game1">
+                                <h3>カラータイル</h3>
+                            </div>
+                        </a>
+                        <a href="#modal-portforio" class="col scroll2 modalOpen" data-modal="pro-modal3">
+                            <div class="card">
+                                <img src="./Images/portforio.png" width="100%" alt="game1">
+                                <h3>ポートフォリオ</h3>
+                            </div>
+                        </a>
+                        <a href="#modal-marubatu" class="col scroll2 modalOpen" data-modal="pro-modal1">
+                            <div class="card">
+                                <img src="./Images/marubatu.png" width="100%" alt="game1">
+                                <h3>まるばつゲーム</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="center scroll2" style = 'display: none;'>
+                        <a href="./project.html#projects_section1" class="btn">MORE</a>
+                    </div>
+                </div>
+
+                <!-- Programs用のモーダル -->
+                <div id="pro-modal1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>まるばつゲーム</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/marubatu_play.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　このゲームは<b>HTML・CSS・JavaScript</b>を使用し、約3日で作成しました。UIはシンプルで、クリックするだけでマスにそれぞれの印をつけることができます。また、勝利したプレイヤーのマスもハイライト表示されるようにし、視覚的に勝利を示すことができます。</p>
+                                <p>　さらに、このゲームにはゲームリセットおよびUndo機能もあります。新しいゲームを開始や、印のつけ直しを行うことができます。</p>
+                                <p class="reference">
+                                    Reference:
+                                    <a href="https://www.youtube.com/watch?v=yl2yAGXQWt0&list=PLjVOh_I4G7VfS_Oz3R47vpXslBDHy2KOD" target="_blank"> 【プログラミング入門】〇×ゲームをつくろう！</a>
+                                </p>
+                                <a href="https://ai9098.github.io/Web-site/marubatu/" target="_blank">
+                                    <i class="fas fa-caret-right mark"></i>
+                                </a>
+                                <a href="https://github.com/ai9098/Web-site/tree/main/marubatu" target="_blank">
+                                    <i class="fa-brands fa-github mark"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pro-modal2" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>カラータイル</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/colorTile_play.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　このゲームは、授業で作成したJava課題を元に<b>HTML・CSS・JavaScript</b>を使用し、約5日で作成しました。UIは授業内で配布された雛型を参考にしていますが、タイル探索アルゴリズムやゲームロジックは自分で実装しています。</p>
+                                <p>　空白マスをクリックすると、上下左右の同じ色のタイルを探索し、まとめて消すことが出来ます。また、盤面の状況に応じてゲームクリアとゲームオーバーを切り替えて表示するようにしています。</p>
+                                <p>　さらに、盤面リセットおよびスコア要素も追加しました。盤面の色タイルの再設置や、消したタイル数に応じてスコアが加算されるようになっています。</p>
+                                <a href="https://ai9098.github.io/Web-site/ColorTile/" target="_blank">
+                                    <i class="fas fa-caret-right mark"></i>
+                                </a>
+                                <a href="https://github.com/ai9098/Web-site/tree/main/ColorTile" target="_blank">
+                                    <i class="fa-brands fa-github mark"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pro-modal3" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>ポートフォリオ</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/portforio_play.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　このポートフォリオは<b>HTML・CSS・JavaScript</b>を使用し、約2~3週間で作成しました。</p>
+                                <p>　スクロール時のアニメーションやモーダル機能を実装し、見やすさだけでなく、視覚的にも楽しめるデザインを意識しています。</p>
+                                <p>　さらに、FormSubmitを利用したお問い合わせフォーム機能も追加し、実際にフォームを送信できるようにしています。</p>
+                                <a href="https://github.com/ai9098/Web-site/tree/main/portforio-site" target="_blank">
+                                    <i class="fa-brands fa-github mark"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <h2 id="Illustrations" class="scroll2">Illustrations</h2>
+                    <div class="row">
+                        <!-- カード -->
+                        <a href="#modal-marubatu" class="col scroll2 modalOpen" data-modal="ill-modal1">
+                            <div class="card">
+                                <img src="./Images/ill1-up.png" width="100%" alt="game1">
+                                <h3>神楽ちゃん</h3>
+                            </div>
+                        </a>
+                        <a href="#modal-colortile" class="col scroll2 modalOpen" data-modal="ill-modal2">
+                            <div class="card">
+                                <img src="./Images/ill2-up.png" width="100%" alt="game1">
+                                <h3>甘奈ちゃん</h3>
+                            </div>
+                        </a>
+                        <a href="#modal-kotone" class="col scroll2 modalOpen" data-modal="ill-modal3">
+                            <div class="card">
+                                <img src="./Images/ill3-up.png" width="100%" alt="game1">
+                                <h3>二次創作</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="center scroll2"  style = 'display: none;'>
+                        <a href="" class="btn">MORE</a>
+                    </div>
+                </div>
+                <!-- Illust用のモーダル -->
+                <div id="ill-modal1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>長月神楽 ちゃん</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/ill1.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　このイラストは<b>IbisPaint X</b>を使用し、約7.5時間で制作しました。和歌山県で栽培される「サイパン芋」の魅力を伝える、ご当地キャラクターとして描かせていただきました。また、制作したイラストは実際にグッズ化されています。</p>
+                                <p>　お芋イメージのため、髪色は紫、目の色は黄色を基調にデザインしました。また、姉である「長月甘奈」ちゃんの雰囲気と離れすぎないようよう、キャラクター性の統一感も意識しています。</p>
+                                <a href="https://x.com/Project_KANNA" target="_blank"  class="x-icon">
+                                    𝕏
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ill-modal2" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>長月甘奈 ちゃん</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/ill2.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　このイラストは<b>IbisPaint X</b>を使用し、約7時間で制作しました。和歌山県で栽培される「サイパン芋」の魅力を伝える、ご当地キャラクターとして描かせていただきました。</p>
+                                <p>　お芋イメージのため、髪色は紫、目の色は黄色を基調にデザインしました。また、このイラストの衣装は新衣装として発表されたものです。</p>
+                                <p>　制作したイラストはグッズ化されているほか、大阪・関西万博(2025)ではアクリルスタンドとして展示していただきました。</p>
+                                <a href="https://x.com/Project_KANNA/status/1967399129572855867" target="_blank"  class="x-icon">
+                                    𝕏
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ill-modal3" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>藤田ことね ちゃん</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/ill3.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　このイラストは<b>IbisPaint X</b>を使用し、約4.5時間で作成しました。「学園アイドルマスター」に登場する「藤田ことね」ちゃんのイラストです。</p>
+                                <p>　キャラクター本来のイメージや雰囲気を保ちながら、自分なりの「可愛い」を表現しました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="models3d" class="container">
+                    <h2 class="scroll2">3Dmodels</h2>
+                    <div class="row">
+                    <!-- カード -->
+                        <a href="#modal-nina" class="col scroll2 modalOpen" data-modal="model3d-modal1">
+                            <div class="card">
+                                <img src="./Images/nina-up.png" width="100%" alt="game1">
+                                <h3>にーな</h3>
+                            </div>
+                        </a>
+                        <a href="#modal-hand" class="col scroll2 modalOpen" data-modal="model3d-modal2">
+                            <div class="card">
+                                <img src="./Images/hand-up.png" width="100%" alt="game1">
+                                <h3>手</h3>
+                            </div>
+                        </a>
+                        <a href="#modal---" class="col scroll2 modalOpen" data-modal="model3d-modal3" style = 'display: none;'>
+                            <div class="card">
+                                <img src="./Images/nina-up.png" width="100%" alt="game1">
+                                <h3>--</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="center scroll2"  style = 'display: none;'>
+                        <a href="" class="btn">MORE</a>
+                    </div>
+                </div>
+                <!-- 3Dmodel用のモーダル -->
+                <div id="model3d-modal1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>ローポリ ニーナ</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/nina.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　この3Dモデルは<b>Blender</b>を使用し、約1.5週間で作成しました。「ときめきメモリアルGS3」に登場する「新名旬平」くんをローポリゴンとして再現しています。</p>
+                                <p>　また、ボーンを導入しているため、ポージングやアニメーションを行うことができます。</p>
+                                <p>　少ないポリゴン数でキャラクターの特徴を再現することが難しく、シルエットや表情が崩れないよう工夫しました。また、テクスチャを綺麗に貼るために、UV展開も調整しています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="model3d-modal2" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>手</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <div class="modal-img">
+                                <img src="./Images/hand.png" width="100%" alt="game1">
+                            </div>
+                            <div class="modal-body">
+                                <p id="mintitle">Details</p>
+                                <p>　このモデルは<b>Blender</b>を使用し、約2日で作成しました。オープンキャンパスで使用することを目的に作成しています。</p>
+                                <p>　ボーンを導入しているため、ポージングやアニメーションを行うことができます。また、輪郭線も追加することで、モデルの立体感を分かりやすく表現できるよう工夫しました。</p>
+                                <p class="reference">
+                                    Reference:
+                                    <a href="https://www.youtube.com/watch?v=cPrupquhQYQ&list=PL7AyBndD_6pWbIRIb0KoO8ZnvsVQhLNLD&index=5" target="_blank"> Blenderでキャラクターモデル制作！05 | 手のモデリング/リギング/スキニング</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="go_top">
+                <a href="./project.html" class="go_top_btn">
+                    <i class="fas fa-angle-up"></i> Top Page
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <a href="./index.html" class="logo">ポートフォリオ</a>
+                <ul>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                Copyright © 2026 ポートフォリオ All right reserverd.
+            </div>
+        </footer>
+    </body>
+
+</html>
