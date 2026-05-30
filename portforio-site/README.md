@@ -1,8 +1,8 @@
-# portforio-site
+# portfolio-site
 HTML・CSS・JavaScriptを用いて作成した、私のポートフォリオサイトです。
 
 ## Demo
-https://ai9098.github.io/Web-site/portforio-site/
+https://ai9098.github.io/Web-site/portfolio-site/
 
 ## Features
 - Home/ About/ Project/ Contactのページを作成
