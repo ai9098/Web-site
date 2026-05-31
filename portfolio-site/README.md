@@ -1,5 +1,6 @@
 # portfolio-site
 HTML・CSS・JavaScriptを用いて作成した、私のポートフォリオサイトです。
+モーダル機能やスクロールアニメーションを実装し、FormSubmitを利用したお問い合わせフォームも実装しています。
 
 ## Demo
 https://ai9098.github.io/Web-site/portfolio-site/
