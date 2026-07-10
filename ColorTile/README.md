@@ -7,7 +7,7 @@ UIは授業内で配布された雛型を参考にしていますが(./java-orig
 https://ai9098.github.io/Web-site/ColorTile/
 
 ## Movie
-[[Youtube](https://youtu.be/oKiDcSKHWWQ)](https://youtu.be/oKiDcSKHWWQ)
+[https://youtu.be/oKiDcSKHWWQ](https://youtu.be/oKiDcSKHWWQ)
 
 ## Features
 - 同じ色のタイルを探索して削除
